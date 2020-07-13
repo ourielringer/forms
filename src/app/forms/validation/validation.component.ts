@@ -6,7 +6,7 @@ import { FormControl } from '@angular/forms';
   templateUrl: './validation.component.html',
   styleUrls: ['./validation.component.css']
 })
-export class ValidationComponent implements OnInit {
+export class ValidationComponent  implements OnInit {
 
   constructor() { }
 
