@@ -1,0 +1,21 @@
+<p>f2 works!</p>
+
+<form class="from" [formGroup]="myPersonForm" (ngSubmit)="onShukiSubmit()">
+  <div>
+    <span> firstName:</span><input type="text" formControlName="firstName" placeholder="first name"><br><br>
+    <label> lastName:</label><input type="text" formControlName="lastName" placeholder="last name"><br><br>
+    <label> age:</label><input  type="text" formControlName="age" placeholder="age"><br><br>
+    <label> Address:<input type="text" formControlName="Address" placeholder="address"></label><br><br>
+    <label> City:<input type="text" formControlName="City" placeholder="city"></label>
+    <br><br>
+  
+    <button type="submit" [disabled]="!myPersonForm.valid">Submit</button>
+  </div>
+</form>
+
+<br><br>
+<button (click)="logthenamer()">log</button>
+<br><br><br>
+<ul>
+    <li *ngFor="let x of arr">{{x.firstName}} - {{x.age}}</li>
+</ul>

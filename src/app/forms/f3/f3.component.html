@@ -1,0 +1,20 @@
+<p>f3 works!</p>
+
+<form [formGroup]="newRegForm" (ngSubmit)="onShukiSubmit()">
+  
+    <label> Name: <input formControlName="name"> </label><br>
+    <app-validation [ctrl]="newRegForm.controls.name"></app-validation>
+
+    <label> age: <input  formControlName="age"> </label><br>
+    <app-validation [ctrl]="newRegForm.controls.age"></app-validation>
+
+    <label> phon number: <input  formControlName="girraf"> </label><br>
+    <app-validation [ctrl]="newRegForm.controls.girraf"></app-validation>
+
+    <label> email: <input  formControlName="email"> </label><br>
+    <app-validation [ctrl]="newRegForm.controls.email"></app-validation>
+
+    <br><br>
+  
+    <button type="submit" [disabled]="!newRegForm.valid">Submit</button>
+</form>

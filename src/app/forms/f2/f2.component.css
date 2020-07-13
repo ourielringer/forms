@@ -1,0 +1,13 @@
+
+
+.from{
+    display: inline-block; 
+    border: 5px black solid;
+    background: sandybrown
+}
+input{
+    float: right
+ }
+ div{
+     padding: 5px;
+ }
